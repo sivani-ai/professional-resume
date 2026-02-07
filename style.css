@@ -1,0 +1,278 @@
+/* =========================
+   GLOBAL RESET & BASE
+========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f4f6f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* =========================
+   HEADER
+========================= */
+.header {
+    background-color: #0f172a;
+    color: #ffffff;
+    text-align: center;
+    padding: 45px 20px;
+}
+
+.header h1 {
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+}
+
+.header p {
+    margin-top: 8px;
+    font-size: 1.05rem;
+    font-weight: 500;
+    color: #cbd5f5;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+.navbar {
+    position: sticky;
+    top: 0;
+    background-color: #020617;
+    display: flex;
+    justify-content: center;
+    gap: 28px;
+    padding: 14px;
+    z-index: 100;
+}
+
+.navbar a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+
+.navbar a:hover {
+    color: #38bdf8;
+}
+
+/* =========================
+   SECTION LAYOUT
+========================= */
+.section {
+    max-width: 900px;
+    margin: 55px auto;
+    padding: 0 20px;
+}
+
+.section h2 {
+    font-size: 1.6rem;
+    color: #020617;
+    margin-bottom: 18px;
+    border-bottom: 2px solid #e5e7eb;
+    padding-bottom: 6px;
+}
+
+/* =========================
+   ABOUT
+========================= */
+#about p {
+    font-size: 0.95rem;
+    text-align: justify;
+}
+
+/* =========================
+   EDUCATION
+========================= */
+.education-item {
+    margin-bottom: 25px;
+}
+
+.education-item h3 {
+    font-size: 1.05rem;
+    margin-bottom: 4px;
+    color: #020617;
+}
+
+.edu-institute {
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+
+.edu-year {
+    font-size: 0.85rem;
+    color: #64748b;
+    margin-bottom: 8px;
+}
+
+/* =========================
+   SKILLS
+========================= */
+.skill-category {
+    margin-top: 25px;
+    margin-bottom: 10px;
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #0f172a;
+}
+
+.skill {
+    margin-bottom: 14px;
+}
+
+.skill span {
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+
+.bar {
+    height: 8px;
+    background-color: #d1d5db;
+    border-radius: 6px;
+    margin-top: 5px;
+}
+
+.fill {
+    height: 100%;
+    background-color: #38bdf8;
+    border-radius: 6px;
+}
+
+/* Skill Levels */
+.html { width: 90%; }
+.css { width: 85%; }
+.python { width: 70%; }
+.sql { width: 75%; }
+.js { width: 50%; }
+.canva { width: 65%; }
+.git { width: 60%; }
+
+/* Soft Skills */
+.soft-skills {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+.soft-skills li {
+    margin-bottom: 6px;
+    font-size: 0.95rem;
+}
+
+/* =========================
+   SERVICES
+========================= */
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.service-card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+.service-card h3 {
+    margin-bottom: 8px;
+    font-size: 1.05rem;
+    color: #020617;
+}
+
+.service-card p {
+    font-size: 0.9rem;
+}
+
+/* =========================
+   PROJECTS
+========================= */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 22px;
+}
+
+.project-card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+.project-card h3 {
+    margin-bottom: 8px;
+    font-size: 1.05rem;
+    color: #020617;
+}
+
+.project-card p {
+    font-size: 0.9rem;
+}
+
+/* =========================
+   CERTIFICATIONS
+========================= */
+.cert-list {
+    padding-left: 20px;
+}
+
+.cert-list li {
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+}
+
+/* =========================
+   CONTACT
+========================= */
+#contact p {
+    margin-bottom: 10px;
+    font-size: 0.95rem;
+}
+
+#contact i {
+    color: #0ea5e9;
+    margin-right: 8px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+.footer {
+    background-color: #0f172a;
+    color: #ffffff;
+    text-align: center;
+    padding: 18px;
+    margin-top: 50px;
+}
+
+.footer p {
+    font-size: 0.9rem;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 600px) {
+    .header h1 {
+        font-size: 1.8rem;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .section {
+        margin: 40px auto;
+    }
+}
